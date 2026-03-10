@@ -18,7 +18,6 @@ export default defineConfig({
     },
   },
   plugins: [tailwindcss(),
-     require('tailwindcss-textshadow'),
 
   react()],
 })
