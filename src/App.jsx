@@ -2,7 +2,7 @@ import MainText from './components/MainText'
 import RightBox from './components/RightBox'
 import './App.css'
 import LeftBox from './components/LeftBox'
-import Modal from './components/modals/Modal'
+import ProfileModal from './components/modals/ProfileModal'
 import{useState} from 'react'
 
 function App() {
@@ -22,7 +22,7 @@ function App() {
   <LeftBox modal={modal}/>
   <MainText />
   <RightBox modal={modal}/>
-  {modalOpen && <Modal modal={modal}/>}
+  {modalOpen && <ProfileModal modal={modal}/>}
 
 
    </div>
