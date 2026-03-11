@@ -2,7 +2,7 @@ import { FcOpenedFolder } from "react-icons/fc";
 import { PiReadCvLogoDuotone } from "react-icons/pi";
 
 import { PiIdentificationBadgeFill } from "react-icons/pi";
-function RightBox({modal}){
+function RightBox({ResumeFun}){
     return (
     <>
     
@@ -12,12 +12,12 @@ function RightBox({modal}){
     
 
     
-            <div className="flex flex-col items-center w-full h-1/2" onDoubleClick={()=>modal()}>
+            <div className="flex flex-col items-center w-full h-1/2" onDoubleClick={()=>ResumeFun()}>
                 <FcOpenedFolder size={100} />
                 <div>Hello</div>
             </div>
 
-            <div className="flex flex-col  items-center w-full h-1/2" onDoubleClick={()=>modal()}>
+            <div className="flex flex-col  items-center w-full h-1/2" onDoubleClick={()=>ResumeFun()}>
                 <div><PiReadCvLogoDuotone size={100} color="red" /></div>
 
                 <div className="">Resume</div>

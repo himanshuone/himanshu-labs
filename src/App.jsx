@@ -3,13 +3,32 @@ import RightBox from './components/RightBox'
 import './App.css'
 import LeftBox from './components/LeftBox'
 import ProfileModal from './components/modals/ProfileModal'
+import ResumeModal from './components/modals/ResumeModal'
 import{useState} from 'react'
 
 function App() {
-  const [modalOpen, setModalOpen]= useState(true)
+  const [modalOpen, setModalOpen]= useState(false)
+  const [profileOpen, setProfileOpen]= useState(false)
+  const [resumeOpen, setResumeOpen]= useState(false)
+ 
+  const ProfileFun=()=>{
+
+    setProfileOpen(!profileOpen)
+
+  }
+  const ResumeFun=()=>{
+
+    setResumeOpen(!resumeOpen)
+    setProfileOpen(false)
+
+  }
   const modal=()=>{
-    setModalOpen(!modalOpen)
-    console.log("Modal")
+
+    setResumeOpen(false)
+
+
+    setProfileOpen(!profileOpen)
+
   }
 
   return (
@@ -21,8 +40,9 @@ function App() {
 
   <LeftBox modal={modal}/>
   <MainText />
-  <RightBox modal={modal}/>
-  {modalOpen && <ProfileModal modal={modal}/>}
+  <RightBox ResumeFun={ResumeFun}/>
+  {profileOpen && <ProfileModal ProfileFun={ProfileFun}/>}
+  {resumeOpen && <ResumeModal ResumeFun={ResumeFun}/>}
 
 
    </div>
