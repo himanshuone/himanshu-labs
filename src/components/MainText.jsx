@@ -3,7 +3,7 @@ function MainText(){
     return (
         <>
 
-        <h1 className=" items-center flex justify-center h-full xl:h-full md:h-full sm:h-full lg:w-3/5 ">
+        <div className=" items-center flex justify-center h-full xl:h-full md:h-full sm:h-full lg:w-3/5 ">
 
 
 <h1 className=" xl:text-9xl lg:text-8xl md:text-7xl sm:text-6xl text-5xl  font-roboto font-extrabold font-stretch-125%
@@ -16,7 +16,7 @@ function MainText(){
    "> PORTFOLIO</h1>
 
 
-</h1>
+</div>
         </>
     )
 
