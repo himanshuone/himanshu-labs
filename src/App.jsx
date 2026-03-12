@@ -4,16 +4,23 @@ import './App.css'
 import LeftBox from './components/LeftBox'
 import ProfileModal from './components/modals/ProfileModal'
 import ResumeModal from './components/modals/ResumeModal'
+import WorkModal from './components/modals/WorkModal'
 import{useState} from 'react'
 
 function App() {
   const [modalOpen, setModalOpen]= useState(false)
   const [profileOpen, setProfileOpen]= useState(false)
   const [resumeOpen, setResumeOpen]= useState(false)
+  const [workOpen, setWorkOpen]= useState(false)
  
   const ProfileFun=()=>{
 
     setProfileOpen(!profileOpen)
+
+  }
+  const WorkFun=()=>{
+
+    setWorkOpen(!workOpen)
 
   }
   const ResumeFun=()=>{
@@ -38,11 +45,12 @@ function App() {
     bg-[size:24px_24px]">
 <div className="h-screen justify-center flex flex-col xl:flex-row lg:flex-row  md:flex-row sm:flex-row w-full ">
 
-  <LeftBox modal={modal}/>
+  <LeftBox modal={modal} WorkFun={WorkFun}/>
   <MainText />
   <RightBox ResumeFun={ResumeFun}/>
   {profileOpen && <ProfileModal ProfileFun={ProfileFun}/>}
   {resumeOpen && <ResumeModal ResumeFun={ResumeFun}/>}
+  {workOpen && <WorkModal WorkFun={WorkFun}/>}
 
 
    </div>

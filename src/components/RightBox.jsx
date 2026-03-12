@@ -14,13 +14,13 @@ function RightBox({ResumeFun}){
     
             <div className="flex flex-col items-center w-full h-1/2" onDoubleClick={()=>ResumeFun()}>
                 <FcOpenedFolder size={100} />
-                <div>Hello</div>
+                <div className="font-stretch-125%">Hello</div>
             </div>
 
             <div className="flex flex-col  items-center w-full h-1/2" onDoubleClick={()=>ResumeFun()}>
                 <div><PiReadCvLogoDuotone size={100} color="red" /></div>
 
-                <div className="">Resume</div>
+                <div className="font-stretch-125%">Resume</div>
             </div>
     
     
