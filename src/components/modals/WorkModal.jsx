@@ -111,7 +111,11 @@ function WorkModal({WorkFun}) {
           </div>
           </div>
           
- <div className='flex text-5xl mt-18 font-mono font-semibold justify-center  text-gray-600'>DEVELOPMENT</div>
+ <div className='flex flex-col w-full h-'>
+  <div className='flex text-5xl mt-18 font-mono font-semibold justify-center  text-gray-600'>DEVELOPMENT</div>
+
+ <div className='flex justify-center items-center h-[20vh] bg-gray-700'> Hello</div>
+ </div>
 
 
 
