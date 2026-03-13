@@ -21,6 +21,8 @@ function App() {
   const WorkFun=()=>{
 
     setWorkOpen(!workOpen)
+    setProfileOpen(false)
+      setResumeOpen(false)
 
   }
   const ResumeFun=()=>{
