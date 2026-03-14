@@ -9,6 +9,7 @@ import stackoverflow from './workmodalAssets/stackoverflow.png'
 import figma from './workmodalAssets/figma.png'
 import django from './workmodalAssets/django.png'
 import reactt from './workmodalAssets/react.png'
+import application from './workmodalAssets/app.png'
 import { SiExpress } from "react-icons/si";
 import { SiTailwindcss } from "react-icons/si";
 
@@ -111,10 +112,27 @@ function WorkModal({WorkFun}) {
           </div>
           </div>
           
- <div className='flex flex-col w-full h-'>
+ <div className='flex flex-col w-full h-fit'>
   <div className='flex text-5xl mt-18 font-mono font-semibold justify-center  text-gray-600'>DEVELOPMENT</div>
 
- <div className='flex justify-center items-center h-[20vh] bg-gray-700'> Hello</div>
+<div className='flex flex-row mb-20 gap-10 mt-20'>
+   <div className='flex justify-center items-center h-fit w-fit  rounded-4xl border-0'>
+  <img src={application} alt="" className='w-100 rounded-3xl border' />
+ </div>
+ <div className='flex flex-col justify-center items-center h-fit w-fit'> 
+<div className='h-full w-full flex flex-col justify-center'>
+
+          <div className='text-6xl font-semibold   text-[#ff7a05]'>iSeeThrough</div>
+
+          <div className='text-xl font-nunito font-extralight font-stretch-80% mt-2'>I'M A WEB DEVELOPER</div>
+          
+        </div>
+
+
+
+ </div>
+</div>
+
  </div>
 
 
