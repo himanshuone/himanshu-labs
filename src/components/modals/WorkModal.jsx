@@ -1,5 +1,7 @@
+
 import React from 'react'
 import image from '../../assets/img.jpg'
+
 import { FaWindowClose } from "react-icons/fa";
 import github from './workmodalAssets/github.png';
 import visual from './workmodalAssets/visual.png';
@@ -19,7 +21,7 @@ function WorkModal({WorkFun}) {
   return (
     <>
 
-    <div className=" w-3/5 h-full fixed flex  justify-center items-center">
+    <div className=" w-3/5  h-full fixed flex  justify-center items-center min-w-120 ">
 
        <div className='flex flex-col overflow-hidden bg-white h-3/5 w-full rounded-2xl'>
        <div className=' h-[8vh] w-full flex justify-between  items-center p-5  border-3 border-b-2 rounded-t-2xl border-black bg-[#646a45]'>
@@ -115,17 +117,23 @@ function WorkModal({WorkFun}) {
  <div className='flex flex-col w-full h-fit'>
   <div className='flex text-5xl mt-18 font-mono font-semibold justify-center  text-gray-600'>DEVELOPMENT</div>
 
-<div className='flex flex-row mb-20 gap-10 mt-20'>
+<div className='flex flex-col xl:flex-row lg:flex-col md:flex-col sm:flex-col  mb-20 gap-10 mt-20 justify-center items-center'>
    <div className='flex justify-center items-center h-fit w-fit  rounded-4xl border-0'>
-  <img src={application} alt="" className='w-100 rounded-3xl border' />
+  <img src={application} alt="" className='min-w-100 w-180   rounded-3xl border' />
  </div>
  <div className='flex flex-col justify-center items-center h-fit w-fit'> 
 <div className='h-full w-full flex flex-col justify-center'>
 
           <div className='text-6xl font-semibold   text-[#ff7a05]'>iSeeThrough</div>
 
-          <div className='text-xl font-nunito font-extralight font-stretch-80% mt-2'>I'M A WEB DEVELOPER</div>
-          
+          <div className='text-xl font-nunito font-extralight font-stretch-80% mt-2'>I Built a website to Store Movies I have watched. and it suggest u or remind u to watch a movie again from watched list. multiple other user can also store there list</div>
+          <div className='flex w-full h-full  gap-10 justify-between mt-1 '>
+            <div className='rounded border px-3 bg-gray-700 text-gray-100 py-1' >
+              <a href="https://iseethrough.pythonanywhere.com/" target='_blank' >IseeThrough</a>
+             </div> 
+            <div className='rounded-2xl border px-3 bg-gray-700 text-gray-100 py-1'><a href="https://github.com/himanshuone/django-movie-tracker" target='_blank' >Github</a>
+</div>
+          </div>
         </div>
 
 
