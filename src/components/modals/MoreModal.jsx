@@ -1,19 +1,34 @@
-import React from "react";
-import image from "../../assets/img.jpg";
-import { FaWindowClose } from "react-icons/fa";
 
-function MoreModal({ ProfileFun }) {
+
+
+
+
+
+import { FaWindowClose } from "react-icons/fa";
+import github from './workmodalAssets/github.png';
+import leet from './workmodalAssets/leet.png';
+import hackerrank from './workmodalAssets/hackerrank.png'
+import gfg from './workmodalAssets/gfg.png';
+
+
+import django from './workmodalAssets/django.png'
+import reactt from './workmodalAssets/react.png'
+import application from './workmodalAssets/app.png'
+import { SiExpress } from "react-icons/si";
+import { SiTailwindcss } from "react-icons/si";
+
+function MoreModal({ MoreFun }) {
   return (
     <>
       <div className=" w-3/5  h-full fixed flex  justify-center items-center min-w-120 ">
         <div className="flex flex-col overflow-hidden bg-white h-3/5 w-full rounded-2xl">
           <div className=" h-[8vh] w-full flex justify-between  items-center p-5  border-3 border-b-2 rounded-t-2xl border-black bg-[#646a45]">
             <div className=" text-xl font-stretch-110% text-gray-100">
-              C:\himanshu\works{" "}
+              C:\himanshu\more
             </div>
             <div
               className="  flex  hover:bg-red-700 text-white font-bold py-2 px-2 rounded "
-              onClick={() => WorkFun()}
+              onClick={() => MoreFun()}
             >
               <FaWindowClose className="text-yellow-200" size={20} />
             </div>
@@ -23,54 +38,42 @@ function MoreModal({ ProfileFun }) {
             <div className="flex flex-col  h-full w-full items-center">
               <div className="w-[80%] flex  bg-[#F1B679]  h-12"> </div>
               <div className="flex  text-5xl mt-8 font-mono font-semibold text-gray-600">
-                TOOLS
+                More
               </div>
 
               <div className="flex flex-col w-4/5 h-50 mt-12 gap-10">
                 <div className="flex justify-evenly w-full h-full">
-                  <div className="flex-col w-fit flex items-center">
+                  <div className="flex-col w-fit flex items-center" onClick={()=>window.open("https://github.com/himanshuone", "_blank")}>
                     <img src={github} alt="" className="size-20" />
                     <div className="flex justify-center items-center font-mono font-semibold text-gray-600 text-xl">
-                      Github
+                      github
                     </div>
                   </div>
-                  <div className="flex-col w-fit flex items-center">
-                    <img src={visual} alt="" className="size-20" />
+                  <div className="flex-col w-fit flex items-center" onClick={()=>window.open("https://leetcode.com/u/himanshuone/", "_blank")}>
+                    <img src={leet} alt="" className="size-20" />
                     <div className="flex justify-center items-center font-mono font-semibold text-gray-600 text-xl">
-                      Visual
+                      leetcode
                     </div>
                   </div>
 
-                  <div className="flex-col w-fit flex items-center">
-                    <img src={postman} alt="" className="size-20" />
+                  <div className="flex-col w-fit flex items-center" onClick={()=>window.open("https://www.hackerrank.com/profile/himanshuone")}>
+                    <img src={hackerrank} alt="" className="size-20" />
                     <div className="flex justify-center items-center font-mono font-semibold text-gray-600 text-xl">
-                      Postman
+                      hackerrank
                     </div>
                   </div>
-                  <div className="flex-col w-fit flex items-center">
-                    <img src={mongo} alt="" className="size-20" />
+                  <div className="flex-col w-fit flex items-center" onClick={()=>window.open("https://www.geeksforgeeks.org/profile/himanshuone")}>
+                    <img src={gfg} alt="" className="size-20" />
                     <div className="flex justify-center items-center font-mono font-semibold text-gray-600 text-xl">
-                      Mongo
+                      geeksforgeeks
                     </div>
                   </div>
+                  
                 </div>
-                <div className="flex justify-evenly w-full h-full ">
-                  <div className="flex-col w-fit flex items-center">
-                    <img src={stackoverflow} alt="" className="size-20" />
-                    <div className="flex justify-center items-center font-mono font-semibold text-gray-600 text-xl">
-                      StackOF
-                    </div>
-                  </div>
-                  <div className="flex-col w-fit flex items-center">
-                    <img src={figma} alt="" className="size-20" />
-                    <div className="flex justify-center items-center font-mono font-semibold text-gray-600 text-xl">
-                      Figma
-                    </div>
-                  </div>
-                </div>
+               
               </div>
 
-              <div className="flex flex-col  h-full w-full items-center mt-30">
+              <div className="flex flex-col  h-full w-full items-center mt-10">
                 <div className="flex text-5xl mt-8 font-mono font-semibold  text-gray-600">
                   LANGUAGE
                 </div>
