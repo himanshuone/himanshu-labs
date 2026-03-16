@@ -65,7 +65,7 @@ function MoreModal({ MoreFun }) {
                   <div className="flex-col w-fit flex items-center" onClick={()=>window.open("https://www.geeksforgeeks.org/profile/himanshuone")}>
                     <img src={gfg} alt="" className="size-20" />
                     <div className="flex justify-center items-center font-mono font-semibold text-gray-600 text-xl">
-                      geeksforgeeks
+                      Geeksforgeeks
                     </div>
                   </div>
                   
