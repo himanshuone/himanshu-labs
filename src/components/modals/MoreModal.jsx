@@ -1,5 +1,11 @@
 
 
+import { CiLinkedin } from "react-icons/ci";
+import { CiInstagram } from "react-icons/ci";
+import { FaMediumM } from "react-icons/fa";
+import { BiLogoGmail } from "react-icons/bi";
+
+
 
 
 
@@ -74,103 +80,86 @@ function MoreModal({ MoreFun }) {
               </div>
 
               <div className="flex flex-col  h-full w-full items-center mt-10">
-                <div className="flex text-5xl mt-8 font-mono font-semibold  text-gray-600">
-                  LANGUAGE
-                </div>
-                <div className="flex-col  justify-center mt-10 space-y-3">
-                  <div className=" flex gap-5 justify-center">
-                    <div className="border-2 rounded-4xl px-10 py-1  flex justify-center bg-[#F1B679]  text-2xl font-stretch-75%">
-                      C
-                    </div>
-                    <div className="border-2 rounded-4xl px-17 py-1  flex justify-center bg-[#646a45] text-gray-200 text-2xl font-stretch-75%">
-                      JavaScript
-                    </div>
-                  </div>
-                  <div className=" flex gap-5 justify-center">
-                    <div className="border-2 rounded-4xl px-17 py-1  flex justify-center  bg-[#646a45] text-gray-200 text-2xl font-stretch-75%">
-                      Python
-                    </div>
-                    <div className="border-2 rounded-4xl px-10 py-1  flex justify-center bg-[#F1B679]  text-2xl font-stretch-75%">
-                      C++
-                    </div>
-                  </div>
-                </div>
+                
+                
                 <div className="flex text-5xl mt-18 font-mono font-semibold  text-gray-600">
-                  TECH-STACKS
+                  Social's
                 </div>
                 <div className="flex flex-col w-4/5 h-50 mt-12 gap-10">
                   <div className="flex justify-evenly w-full h-full">
-                    <div className="flex-col w-fit flex items-center">
-                      <SiExpress className="size-20" />
 
+                    <div className="flex-col w-fit flex items-center blur-xs cursor-wait" >
+                    <CiLinkedin className="size-20" />
                       <div className="flex justify-center items-center font-mono font-semibold text-gray-600 text-xl">
-                        Express
+                        Linkedin
                       </div>
                     </div>
-                    <div className="flex-col w-fit flex items-center">
-                      <img src={reactt} alt="" className="size-20" />
+                    <div className="flex-col w-fit flex items-center cursor-" onClick={()=> window.open("https://medium.com/@himanshuone", "_blank")}>
+                        <FaMediumM className="size-20"/>
                       <div className="flex justify-center items-center font-mono font-semibold text-gray-600 text-xl">
-                        React
+                        Medium
+                      </div>
+                    </div>
+                    <div className="flex-col w-fit flex items-center cursor-pointer  " onClick={()=> window.open("mailto:himanshucome1@gmail.com") }>
+                    <BiLogoGmail className="size-20"/>
+                      <div className="flex justify-center items-center font-mono font-semibold text-gray-600 text-xl">
+                        Email
                       </div>
                     </div>
 
-                    <div className="flex-col w-fit flex items-center">
-                      <img src={django} alt="" className="size-20" />
+                    <div className="flex-col w-fit flex items-center blur-xs cursor-not-allowed " onClick={()=> window.open("https://www.freepik.com/free-photos-vectors/happy-cat", "_blank")}>
+                    <CiInstagram className="size-20"/>
                       <div className="flex justify-center items-center font-mono font-semibold text-gray-600 text-xl">
-                        Django
+                        Instagram
                       </div>
                     </div>
-                    <div className="flex-col w-fit flex items-center">
-                      <SiTailwindcss className="size-20" />
-                      <div className="flex justify-center items-center font-mono font-semibold text-gray-600 text-xl">
-                        Tailwind
-                      </div>
-                    </div>
+                    
+                   
                   </div>
 
                   <div className="flex flex-col w-full h-fit">
                     <div className="flex text-5xl mt-18 font-mono font-semibold justify-center  text-gray-600">
-                      DEVELOPMENT
+                      Collaboration Form
                     </div>
 
                     <div className="flex flex-col xl:flex-row lg:flex-col md:flex-col sm:flex-col  mb-20 gap-10 mt-20 justify-center items-center">
                       <div className="flex justify-center items-center h-fit w-fit  rounded-4xl border-0">
-                        <img
-                          src={application}
-                          alt=""
-                          className="min-w-100 w-180   rounded-3xl border"
-                        />
+                        <div className="rounded border p-5">
+                          <form onSubmit={()=>console.log("done")} className="flex items-center" >
+                           <div>
+                             <input type="text"  placeholder="name" className="outline-none p-2 border-b-2"/>
+                            <input type="email"  placeholder="email" className="outline-none p-2 border-b-2"/>
+                            <textarea type="message"  placeholder="message: on what topic you want to collaborate" className="outline-none p-2 border-b-2"/>
+                            </div>
+                            <div><button type="submit" className="rounded-2xl bg-gray-700 text-gray-50 px-4 py-1">Submit</button></div>
+
+                          </form>
+
+
+
+                        </div>
                       </div>
                       <div className="flex flex-col justify-center items-center h-fit w-fit">
                         <div className="h-full w-full flex flex-col justify-center">
                           <div className="text-6xl font-semibold   text-[#ff7a05]">
-                            iSeeThrough
+                            Message
+                          </div>
+                          <div className="text-sm font-semibold flex justify-center  text-[#ff7a05]">
+                            or collaborations on topic  
                           </div>
 
                           <div className="text-xl font-nunito font-extralight font-stretch-80% mt-2">
-                            I Built a website to Store Movies I have watched.
-                            and it suggest u or remind u to watch a movie again
-                            from watched list. multiple other user can also
-                            store there list
+                            <ul className="list-disc">
+                              <li>React Frontend</li>
+                              <li>Express Backend</li>
+                              <li>Django Backend</li>
+                              <li>Big Cameras</li>
+                              <li>Research on Hardwares</li>
+
+
+                            </ul>
                           </div>
-                          <div className="flex w-full h-full  gap-10 justify-between mt-1 ">
-                            <div className="rounded border px-3 bg-gray-700 text-gray-100 py-1">
-                              <a
-                                href="https://iseethrough.pythonanywhere.com/"
-                                target="_blank"
-                              >
-                                IseeThrough
-                              </a>
-                            </div>
-                            <div className="rounded-2xl border px-3 bg-gray-700 text-gray-100 py-1">
-                              <a
-                                href="https://github.com/himanshuone/django-movie-tracker"
-                                target="_blank"
-                              >
-                                Github
-                              </a>
-                            </div>
-                          </div>
+                          
                         </div>
                       </div>
                     </div>
