@@ -124,9 +124,9 @@ function MoreModal({ MoreFun }) {
 
                     <div className="flex flex-col xl:flex-row lg:flex-col md:flex-col sm:flex-col  mb-20 gap-10 mt-20 justify-center items-center">
                       <div className="flex justify-center items-center h-fit w-fit  rounded-4xl border-0">
-                        <div className="rounded border p-5">
-                          <form onSubmit={()=>console.log("done")} className="flex items-center" >
-                           <div>
+                        <div className="rounded border p-5 ">
+                          <form onSubmit={()=>console.log("done")} className="flex items-center gap-5" >
+                           <div className=" flex-col flex">
                              <input type="text"  placeholder="name" className="outline-none p-2 border-b-2"/>
                             <input type="email"  placeholder="email" className="outline-none p-2 border-b-2"/>
                             <textarea type="message"  placeholder="message: on what topic you want to collaborate" className="outline-none p-2 border-b-2"/>
@@ -141,7 +141,7 @@ function MoreModal({ MoreFun }) {
                       </div>
                       <div className="flex flex-col justify-center items-center h-fit w-fit">
                         <div className="h-full w-full flex flex-col justify-center">
-                          <div className="text-6xl font-semibold   text-[#ff7a05]">
+                          <div className="text-6xl font-semibold   font-stretch-110%     text-[#ff7a05]">
                             Message
                           </div>
                           <div className="text-sm font-semibold flex justify-center  text-[#ff7a05]">
@@ -153,7 +153,7 @@ function MoreModal({ MoreFun }) {
                               <li>React Frontend</li>
                               <li>Express Backend</li>
                               <li>Django Backend</li>
-                              <li>Big Cameras</li>
+
                               <li>Research on Hardwares</li>
 
 
