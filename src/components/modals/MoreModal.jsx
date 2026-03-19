@@ -17,11 +17,7 @@ import hackerrank from './workmodalAssets/hackerrank.png'
 import gfg from './workmodalAssets/gfg.png';
 
 
-import django from './workmodalAssets/django.png'
-import reactt from './workmodalAssets/react.png'
-import application from './workmodalAssets/app.png'
-import { SiExpress } from "react-icons/si";
-import { SiTailwindcss } from "react-icons/si";
+
 
 function MoreModal({ MoreFun }) {
   return (
